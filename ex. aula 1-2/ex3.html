@@ -1,0 +1,12 @@
+<!-- Elaborar um programa que leia a duração de uma viagem em
+dias e horas. Calcule e informe a duração total em minutos. -->
+<meta charset="UTF-8">
+<script>
+    const dias = Number(prompt('Quantos dias durou a viagem?'))
+    const horas = Number(prompt('Quantas horas durou a viagem?'))
+    const totalMinutosDias = dias * 1440
+    const totalMinutosHoras = horas * 60
+    const total = totalMinutosDias + totalMinutosHoras
+
+    alert('Você passou ' + total + ' minutos viajando.')
+</script>

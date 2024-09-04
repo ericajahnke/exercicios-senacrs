@@ -1,0 +1,17 @@
+<!-- A locadora de carros precisa da sua ajuda para cobrar
+seus serviços. Escreva um programa que pergunte a
+quantidade de Km percorridos por um carro alugado e a
+quantidade de dias pelos quais ele foi alugado. Calcule o
+preço total a pagar, sabendo que o carro custa R$90 por dia
+e R$0,20 por Km rodado. -->
+<meta charset="UTF-8">
+<script>
+    const dias = Number(prompt('Quantos dias o automóvel permaneceu com você?'))
+    const km = Number(prompt('Quantos KM ele percorreu?'))
+    const valorDia = dias * 90
+    const valorKm = (km * 0,20)
+    const total = valorDia + valorKm
+
+    alert('O valor pelos dias é de R$' + valorDia + ', e o valor pela quilometragem é de R$' + valorKm + '.')
+    alert('O valor total é de R$' + total + '.')
+</script>
