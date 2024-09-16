@@ -1,21 +1,11 @@
 // Faça um programa que leia a quantidade de alunos em uma turma. Após, leia as notas desses alunos, calcule e mostre a média aritmética dessas notas.
 prompt = require("prompt-sync")()
-const calcularMedia = (notas) => {
+const estudantes = Number(prompt("Qual o número de estudantes? "))
+let notas
 
-let soma = notas.reduce((acc, nota) => acc + nota, 0)
- return soma / notas.length
+for (let i = 0; i > estudantes; i++) {
+  notas = Number(prompt(`Qual a nota do aluno ${i+1}? `))
 }
 
-let quantidadeDeAlunos = Number(prompt("Digite a quantidade de alunos na turma: "))
-if (quantidadeDeAlunos <= 0) {
- console.log("A quantidade de alunos deve ser maior que ZERO.")
-} else {
- let notas = []
- for (let i = 1; i <= quantidadeDeAlunos; i++) {
-  let nota = Number(prompt(`Digite a nota do aluno ${i}: `))
-  notas.push(nota)
- }
-
- let media = calcularMedia(notas)
- console.log(`A média aritmética das notas é: ${media.toFixed(2)}`)
-}
+const media = notas / estudantes
+console.log(`A média da turma é ${media.toFixed(1)}`)
