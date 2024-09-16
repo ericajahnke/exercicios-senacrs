@@ -1,16 +1,20 @@
 // Faça um programa que leia 10 valores, calcule e escreva a média aritmética desses valores.
 prompt = require("prompt-sync")()
-const calcularMedia = (quantidade) => {
 let soma = 0
+let contador = 0
 
-for (let i = 1; i <= quantidade; i++) {
- let valor = Number(prompt(`Digite o valor ${i}: `))
- soma += valor
-}
- let media = soma / quantidade
- return media
+while (contador < 10) {
+  let valor = prompt(`Digite o valor ${contador + 1}: `)
+  valor = Number(valor)
+
+  if (isNaN(valor)) {
+    console.log("Entrada inválida. Por favor, digite um valor numérico.")
+    continue
+  }
+
+  soma += valor
+  contador++
 }
 
-const quantidadeDeValores = 10;
-let media = calcularMedia(quantidadeDeValores);
-console.log(`A média aritmética dos valores é: ${media.toFixed(2)}`);
+const media = soma / contador
+console.log(`A média aritmética dos valores é: ${media}`)
