@@ -4,7 +4,7 @@ let linhas;
 
 while (true) {
   linhas = Number(prompt("Digite o número de linhas do triângulo: "));
-  if (isNaN(linhas) || linhas <= 0) {
+  if (linhas <= 0) {
     console.log("Entrada inválida. Por favor, insira um número positivo.");
     continue;
   }
