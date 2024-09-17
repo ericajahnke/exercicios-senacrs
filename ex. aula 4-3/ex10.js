@@ -4,7 +4,7 @@ prompt = require("prompt-sync")()
 while (true) {
   let valor = Number(prompt("Digite um valor inteiro (ou '0' para encerrar): "))
   if (valor === 0) {
-    break
+    break 
   }
 
   if (valor % 2 === 0) {
