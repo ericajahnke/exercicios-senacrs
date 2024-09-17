@@ -7,7 +7,7 @@ let valor2 = Number(prompt("Digite o segundo valor: "))
 while (valor2 === 0) {
   console.log("Valor inválido")
   valor2 = Number(prompt("Digite um novo valor para o segundo número: "))
-}
+} 
 
 let resultado = valor1 / valor2
 
