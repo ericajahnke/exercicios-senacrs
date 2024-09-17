@@ -5,4 +5,4 @@ let matriz = [
     ["7", "8", "9"]
 ]
 
-console.log(matriz[1][2])
+console.log(matriz[1][2]) 
