@@ -4,7 +4,7 @@ const estudantes = Number(prompt("Qual o número de estudantes? "))
 let somaNotas = 0
 
 for (let i = 0; i < estudantes; i++) {
-  let nota = Number(prompt(`Qual a nota do aluno ${i+1}? `))
+  let nota = Number(prompt(`Qual a nota do aluno ${i+1}? `)) 
   somaNotas += nota
 }
 
