@@ -15,6 +15,6 @@ while (contador < 10) {
   soma += valor
   contador++
 }
-
+ 
 const media = soma / contador
 console.log(`A média aritmética dos valores é: ${media}`)
