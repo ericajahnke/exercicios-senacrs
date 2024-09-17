@@ -15,7 +15,7 @@ while (true) {
     }
     for (let j = 1; j <= i; j++) {
       linha += "* "
-    }
+    } 
     console.log(linha)
   }
   break
