@@ -5,4 +5,4 @@ const numeros = ["10", "20", "30"]
 numeros.push("40")
 numeros.shift()
 
-console.log(numeros)
+console.log(numeros) 
