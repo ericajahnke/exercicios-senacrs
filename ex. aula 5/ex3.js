@@ -6,6 +6,6 @@ let posicao = cores.indexOf(cor)
 
 if (cor !== -1) {
     console.log(`A posição da cor é: ${posicao}!`)
-} else {
+} else { 
     console.log("A cor não foi encontrada.")
 }
